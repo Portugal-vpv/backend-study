@@ -13,7 +13,7 @@ app.get('/products', (req, res, next) => {
 
 app.get('/products/:id', (req, res, next) => {
     res.send(db.getProduct(req.params.id));
-})
+});
 
 app.post('/products', (req, res, next) => {
     const product = db.saveProduct({
@@ -21,7 +21,17 @@ app.post('/products', (req, res, next) => {
         price: req.body.price
     })
     res.send(product);
-})
+});
+
+app.put('/products/:id', (req, res, next) => {
+    const product = db.saveProduct({
+        id: req.params.id,
+        name: req.body.name,
+        price: req.body.price
+    })
+
+    res.send(product);
+});
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
