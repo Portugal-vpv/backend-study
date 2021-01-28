@@ -1,0 +1,25 @@
+{
+  "name": "backend-study",
+  "version": "1.0.0",
+  "description": "Study purposes",
+  "main": "moduloA.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Portugal-vpv/backend-study.git"
+  },
+  "keywords": [
+    "Study"
+  ],
+  "author": "Victor Portugal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Portugal-vpv/backend-study/issues"
+  },
+  "homepage": "https://github.com/Portugal-vpv/backend-study#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
