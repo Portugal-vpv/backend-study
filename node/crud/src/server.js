@@ -33,6 +33,11 @@ app.put('/products/:id', (req, res, next) => {
     res.send(product);
 });
 
+app.delete('products/:id', (req, res, next) => {
+    const product = db.deleteProduct(req.params.id);
+    res.send(product);
+});
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 })
